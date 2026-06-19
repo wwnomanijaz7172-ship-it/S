@@ -1,0 +1,18 @@
+{
+  "name": "noman",
+  "version": "1.0.0",
+  "description": "\"its a fantastic project\"",
+  "license": "ISC",
+  "author": "\"\"noman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
