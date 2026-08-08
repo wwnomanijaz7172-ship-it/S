@@ -1,0 +1,1 @@
+"ALLAH O AKBAR"

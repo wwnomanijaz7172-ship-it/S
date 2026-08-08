@@ -16,7 +16,9 @@ let todos = [
 // Wazeh Nishani: Isme 'next' hota hai. Yeh data check karta hai.
 // ==========================================
 const validateTodoInput = (req, res, next) => {
-    const { title } = req.body;
+
+
+const { title } = req.body;
 
     if (!title || title.trim() === "") {
         return res.status(400).json({ 
@@ -72,3 +74,4 @@ app.delete('/api/todos/:id', deleteTodo);                  // DELETE Request
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+console.log("Model file loaded successfully!");

@@ -10,18 +10,18 @@ let  books =[
 app.get('/books',(req,res)=>{
 res.status(200).json(book)
 })
-// 2. POST API: Nayi book add karne ke liye
+
 app.post('/add-books', (req, res) => {
     const newBook = {
         id: books.length + 1,
-        title: req.body.title,   // Jo title user bhejega
-        author: req.body.author  // Jo author user bhejega
+        title: req.body.title,   
+        author: req.body.author  
     };
 
-    // Nayi book ko list mein shamil kiya
+    
     books.push(newBook);
 
-    // 201 status matlab "Nayi cheez kamyabi se ban gayi"
+    
     res.status(201).json({
         message: "Book added successfully!",
         data: newBook

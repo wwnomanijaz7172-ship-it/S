@@ -1,4 +1,4 @@
-t addProduct = (req, res) => {
+ addProduct = (req, res) => {
     const { name, price } = req.body;
     
     // Yahan database ma save karne ka logic aata ha
@@ -8,7 +8,6 @@ t addProduct = (req, res) => {
         data: { name, price }
     });
 };
-
 module.exports = { addProduct };
 
 
@@ -22,7 +21,7 @@ const { addProduct } = require("../controllers/productController");
 
 router.post("/add-product", addProduct);
 
-module.exports = router;.
+module.exports = router;
 
 
 

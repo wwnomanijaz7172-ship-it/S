@@ -4,23 +4,22 @@
   "description": "\"its a fantastic project\"",
   "license": "ISC",
   "author": "\"\"noman",
-  "main": "index.js",
+  "main": "14ags.js",
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node 14ags.js"
   },
   "dependencies": {
     "express": "^5.2.1"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  },
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wwnomanijaz7172-ship-it/S.git"
   },
+   
   "keywords": [],
-  "type": "commonjs",
+  
   "bugs": {
     "url": "https://github.com/wwnomanijaz7172-ship-it/S/issues"
   },
