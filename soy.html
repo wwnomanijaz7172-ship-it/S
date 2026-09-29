@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">1
+    <title>Document</title>
+</head>
+
+<body
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location Finder</title>
+</head>
+<body>
+
+    <h1 id="h2">Search your location</h1>
+    <button id="btn">Get Location</button>
+
+    <script>
+        const buton = document.getElementById("btn");
+        const h2 = document.getElementById("h2");
+
+        function locationon(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            
+            // Screen par latitude aur longitude show karna
+            h2.innerText = `Latitude: ${lat} \n Longitude: ${lon}`;
+            console.log("Latitude:", lat, "Longitude:", lon);
+        }
+
+        function locationerror(error) {
+            h2.innerText = "Location access denied or unavailable!";
+            console.log("Error:", error.message);
+        }
+
+        buton.addEventListener("click", () => {
+            h2.innerText = "Searching location...";
+            
+            if (navigator.geolocation) {
+                // getCurrentPosition aik dafa current location nikalta hai
+                navigator.geolocation.getCurrentPosition(locationon, locationerror);
+            } else {
+                h2.innerText = "Geolocation is not supported by your browser";
+            }
+        });
+    </script>
+
+</body>
+</html>
+</body>
+
+</html>

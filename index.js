@@ -1,16 +1,18 @@
-console.log("allah pak hamein maaf farmaein")
-/*let b=25,
-c =35
-console.log("c-b",b+c);*/
-
-
-const express = require('express');
+const express = require("express");
+const users = require("./MOCK_DATA.json");
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("assalam alaikum.");
-});
 
-app.listen(3004, () => {
-    console.log("Server port 3004 par start ho gaya hai!");
+app.get('/api/users', (req, res) => {
+    return res.json(users);
 });
+app.get('/api/users/:id', (req, res) => {
+
+    const id = Number(req.params.id);
+    const user = users.find((user) => user.id === id);
+    return res.json(user);
+
+
+});
+app.listen(8004, () => { console.log("server is started") });
+

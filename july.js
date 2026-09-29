@@ -13,7 +13,6 @@ app.get("/contact",(req,res)=>{
     return res.send("ye mera contact page ha ")
 })
 
-app
 
 const myserver=http.createServer(app);
 myserver.listen(3005,()=>{

@@ -1,0 +1,259 @@
+<script>
+
+
+    /*if(0){
+        console.log(true)
+    }
+    
+    let no={
+        name:"noman",
+        class:"inter",
+        islogged:true
+    }
+    console.log(no)
+    
+    console.log(typeof no.islogged);`
+    
+    
+    
+    let b=1;
+     let on="*";
+     let c=22;
+    
+    switch(on) {
+        case '+':console.log(b+c)
+        break
+         case '-':console.log(b-c)
+         break
+          case '*':console.log(b*c)
+          break
+           default: console.log("last function")
+    
+    }
+    let single=2
+    
+    switch(single){
+        case 5:console.log("good");
+    break
+        case 6:console.log("bad");
+    
+    break
+        case 7:console.log("default");
+    
+    
+    }
+    
+    console.log(typeof("123"*55));
+    console.log(typeof(123*"string"));
+    
+    let num =567
+    
+    let str= String(num);
+    console.log(typeof (str));
+    
+    
+    let symbol=789;
+    let ret='${num}';
+    console.log(typeof ret);
+    
+    
+    //for loop 
+    
+    
+    let i = 100; // 1. Initialization (Variable bahar banta hai)
+    
+    while (i >= 50) { // 2. Condition
+        console.log(i);
+        i--; }
+    
+    
+    
+        let k=55;
+        while(k<100){
+                 console.log(k)
+       k++;
+            
+            
+        }
+    A
+         
+    function opps(a,b,k){
+    return a*b+k;
+    }
+    console.log(opps(10,20,"punjab"));
+     //pending
+    function multiplynumbers(){
+      let go =0;
+      for(let m=0 ;m<arguments.length;m=m+1){
+       let go =go+arguments[m]
+      }
+      return go
+    }
+    let resuilt=multiplynumbers(10,20,30,22);
+    console.log(resuilt);
+    //arrow function
+    
+    let noman=(a,b,c)=>{return a+b*c;
+    }
+    console.log(noman(10,40,22));
+    
+    //normal function
+    
+    console.log(sayhello(12,22));
+    function sayhello(a,b){
+        return a*b
+    }
+    
+    const nom={
+        value:33,
+        myfunction :function(){
+            console.log(this)
+    
+            }    }
+     nom.myfunction(10,20)   
+    
+    
+     function sum(a,b,cb){
+        let resuilt =a+b;
+        cb (resuilt)
+     }
+    sum(10,40,(val)=>{console.log(val)});
+    
+    //useCallback
+    
+    Obj = {
+        name: "momin",
+        myfunction: (a, b, cb) => {
+            let resuilt = a + b
+            cb(resuilt)
+    
+        }
+    }
+    Obj.myfunction(10, 20, (val) => {
+        console.log(val)
+    })
+    
+    const marks = [
+        "rohan",
+        12,
+        "laptop",
+        "😍😍😍",
+        550
+    ]
+    console.log(marks.indexOf("laptop"));
+    marks[0]="nomi"
+    console.log(marks)
+    marks.reverse()
+    console.log(marks)
+    marks.push({name:"noman"});
+    console.log(marks)
+    marks.pop();
+    console.log(marks)
+    
+    const king= {
+        name:"noman",
+        class:"five",
+        rollno :22,
+        price:5000
+    }
+    king.price=10000;
+    console.log(king);
+    
+    
+    
+    let moon=["saleem","sayyam","sohail"];
+    
+    let resuilt =moon.map((moon)=>{
+        return moon+"pakistani";
+    })
+    
+    console.log(resuilt);
+    
+    
+    const  digree=["mba","css","mphill","phd"];
+    const school=digree.map((digree)=>{
+        return digree+(22+22);
+    })
+    console.log(school);*
+    const digree = ["mba", "css", "mphill", "phd"];
+    
+    const resuil = digree.forEach((item) => {
+        console.log("ap ki digree: " + item
+        );
+    });
+    
+    /* 
+    Output yeh aayega:
+    Degree ka naam hai: mba
+    Degree ka naam hai: css
+    Degree ka naam hai: mphill
+    Degree ka naam hai: phd
+    
+
+    const marks = [1, 2, 37, 55, 66, 99, 101];
+
+
+    const chk = marks.filter((marks) => {
+        return marks > 50
+
+    })
+    console.log(chk);*/
+
+</script>
+<style>
+
+</style>
+
+<h1 id="box">hello my lovely counrty pakistan </h1>
+<script>
+    const text = document.getElementById("box");
+    text.innerText = "rohail house is a beautifull ";
+    const read = document.getElementsByClassName("yellow")
+    console.log(read);
+</script>
+<br>
+<div id="google"></div>
+<button id="youtube">check me</button>
+<br>
+<br>
+<br>
+<br>
+<div id="container"></div>
+<button id="click">click me</button>
+<script>
+
+    const mybutton = document.getElementById("click")
+    const mycontainer = document.getElementById("container")
+    mybutton.addEventListener("click", () => {
+        const el = document.createElement("h1")
+        el.innerText = "ye naya seekha ha ma ny";
+        mycontainer.style.color = "green";
+        mycontainer.appendChild(el)
+    })
+
+    const search = document.getElementById("google");
+    const video = document.getElementById("youtube"); 3
+    let count = 1;
+    video.addEventListener("click", () => {
+        const api = document.createElement("li");
+
+        api.style.color = "orange";
+        api.innerText = count;
+        search.appendChild(api); ea
+        count++;
+    })
+
+    let a = 33;
+    b = 444;
+    let resuilt = a + b;
+    async function userdata() {
+        let liveserver = await fetch(
+            "https://youtube.com/watch?v=cleNtpjod6"
+        ); console.log(liveserver)
+    } userdata();
+    console.log(resuilt);
+
+
+
+
+</script>

@@ -4,22 +4,24 @@
   "description": "\"its a fantastic project\"",
   "license": "ISC",
   "author": "\"\"noman",
-  "main": "14ags.js",
-  
+  "main": "\"design appi.js\"",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node 14ags.js"
+    "start": "node \"design appi.js\""
   },
   "dependencies": {
-    "express": "^5.2.1"
- },
+    "express": "^5.2.1",
+    "mongoose": "^9.9.5",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wwnomanijaz7172-ship-it/S.git"
   },
    
   "keywords": [],
-  
+
   "bugs": {
     "url": "https://github.com/wwnomanijaz7172-ship-it/S/issues"
   },
